@@ -3,8 +3,10 @@
 
 
 ## Introduce Yourself
----
+
+
 <img src="https://github.com/kaitlinchoffmann/2020-spring-what-do-you-meme/blob/master/No%20Framework/IMG_2315.jpeg" alt="me" width=300px>
+
 
 Hi, I’m Kaitlin Hoffmann. I did my B.S. at Queens College for Nutrition and Dietetics because I originally wanted to be a 
 Registered Dietitian. After graduating, I worked as a cook/kitchen supervisor in a nursing home and was later hired as a 
