@@ -1,4 +1,3 @@
-
 # Created by https://www.gitignore.io/api/node,vuejs,dotenv,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=node,vuejs,dotenv,visualstudiocode
 
@@ -126,5 +125,9 @@ temp/
 
 npm-debug.log
 yarn-error.log
+
+##vuePractice.htm
+No Framework/vuePractice.htm
+No Framework/test3.htm
 
 # End of https://www.gitignore.io/api/node,vuejs,dotenv,visualstudiocode
