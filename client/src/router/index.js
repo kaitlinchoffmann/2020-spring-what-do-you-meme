@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Game from '../views/Game.vue'
 import Login from '../views/Login.vue'
+import { CurrentUser } from '../models/Users'
 
 Vue.use(VueRouter)  // this is global so can use anywhere
 
@@ -15,7 +16,7 @@ const routes = [
   {
     path: '/game',
     name: 'Game',
-    component: Game
+    component: Game, meta: { IsSecret: true } //"meta" lets us create our own property, can also check an array of roles
   },
   {
     path: '/login',
@@ -37,5 +38,10 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 })
+
+router.beforeEach( (to, from, next) => {
+  if( to.meta.IsSecret && !CurrentUser) next('/login');  //alternate: {name: 'Login'}
+  else next(); //empty parameter will go to the page intended (so game page)
+});
 
 export default router
