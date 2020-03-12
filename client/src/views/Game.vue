@@ -26,7 +26,6 @@ import { Players, PictureDeck, CurrentPicture, Init } from "../models/Game";
 
 export default { 
   name: 'Home',
-
   created(){  //similar to mounted, but only happens once. Mounted happens every time
     Init();
   },
