@@ -23,11 +23,13 @@
 <script>
 // @ is an alias to /src
 import { Players, PictureDeck, CurrentPicture, Init } from "../models/Game";
-Init();
 
 export default { 
   name: 'Home',
 
+  created(){  //similar to mounted, but only happens once. Mounted happens every time
+    Init();
+  },
   data:()=> ({   //things available to our component
     Players,
     PictureDeck,
