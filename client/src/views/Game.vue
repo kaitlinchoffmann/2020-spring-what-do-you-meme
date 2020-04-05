@@ -27,7 +27,7 @@ import * as Game from "../models/Game"
 export default { 
   name: 'Home',
   created(){  //similar to mounted, but only happens once. Mounted happens every time
-    Init();
+    Game.Init();
   },
   data:()=> ({   //things available to our component
     Game
