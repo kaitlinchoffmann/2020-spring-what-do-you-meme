@@ -21,5 +21,10 @@ app
         res.sendFile(homePath)
 
     }) //this is a catch-all, if nothing works, send me back to index
+    .use( (err, req, res, next ) => {
+        console.error(err);
+        const errorCode = err.code || 500;
+        res.status(errorCode).send({ message: err.message });
+    } )
 
 app.listen(port, () => console.log(`Listening at http://localhost:${port}`));
